@@ -1,49 +1,49 @@
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-Regular.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-Ukraine-Regular.woff') format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-Bold.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-Ukraine-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-Italic.woff') format('woff');
+    src: url('..fonts/e-Ukraine_font/web/e-Ukraine-Italic.woff') format('woff');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-BoldItalic.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-Ukraine-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-Regular.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-UkraineHead-Regular.woff') format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-Bold.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-UkraineHead-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-Italic.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-UkraineHead-Italic.woff') format('woff');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-BoldItalic.woff') format('woff');
+    src: url('../fonts/e-Ukraine_font/web/e-UkraineHead-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
@@ -86,7 +86,9 @@ p {
     width: 100%;
     height: 100vh;
     padding: 20px;
-    /* Встановлено відступи по 20px */
+    margin: 0 auto;
+    overflow: auto;
+    align-content: center;
 }
 
 .hero-section {
@@ -135,6 +137,11 @@ p {
     white-space: pre-wrap;
 }
 
+.text-grouping-container a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
 .elegant-text {
     font: 400 22px e-UkraineHead;
     color: rgba(80, 68, 52, 1);
@@ -147,6 +154,16 @@ p {
     gap: 28px;
     align-items: center;
     justify-content: flex-start;
+}
+
+.navbar-container a {
+    color: #343a40;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-container a:hover {
+    color: rgba(90, 120, 112, 1);
 }
 
 .brand-link {
@@ -178,7 +195,7 @@ p {
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     padding-right: 30px;
     margin-top: 53px;
@@ -300,17 +317,19 @@ p {
     object-fit: cover;
 }
 
-.search-platform-image {
+.search-platform-map {
     box-sizing: border-box;
     display: block;
-    width: 539px;
-    max-width: initial;
-    height: 695px;
     clip-path: undefined;
-    border: none;
     border-radius: 20px;
     mix-blend-mode: normal;
     object-fit: cover;
+}
+
+#map {
+    width: 639px;
+    border-radius: 20px;
+    height: 699px;
 }
 
 .statistics-container {
@@ -568,11 +587,963 @@ p {
     margin-left: 1.0625rem;
 }
 
+
+/* ----------------------REG-1--------------------- */
+
+.registration-form-container1 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 195px;
+}
+
+.registration-form-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 378px;
+}
+
+.registration-title-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    font: 200 35px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.flex-column-with-gap {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 21px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+.flexbox-container {
+    flex: 0 0 auto;
+}
+
+.elegant-input-style {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-UkraineHead;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.input-style-f62::placeholder {
+    color: rgba(128, 128, 128, 1);
+}
+
+.select-button-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 378px;
+    height: 44px;
+    padding-right: 19px;
+    padding-left: 20px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(128, 128, 128, 1);
+}
+
+.select-button-container option {
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%;
+}
+
+.select-button-container select:focus::after {
+    content: '';
+    border: 2px solid #000000;
+    /* Змініть колір на потрібний */
+    border-radius: 5px;
+    /* Змініть радіус на потрібний */
+}
+
+.confirm-button-style {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 378px;
+    height: 44px;
+    margin-top: 5px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.user-prompt-message {
+    flex: 0 0 auto;
+    align-self: center;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.brand-message-text-style {
+    font: 100 17px e-UkraineHead;
+    color: rgba(128, 128, 128, 1);
+}
+
+.brand-accent-text-color {
+    font: 400 17px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+}
+
+
+/* ----------------------REG-1-END-------------------- */
+
+
+/* ----------------------REG-2--------------------- */
+
+.registration-section-container-2 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 183px;
+}
+
+.registration-form-container-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 378px;
+}
+
+.registration-title-style-2 {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: 5px;
+    font: 400 35px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.action-panel1-2 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 21px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+.flexbox-container-2 {
+    flex: 0 0 auto;
+}
+
+.input-container-with-border-radius-and-text-formatting-2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-UkraineHead;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.input-style-f62::placeholder {
+    color: rgba(128, 128, 128, 1);
+}
+
+.action-button-2 {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 378px;
+    height: 44px;
+    font: 700 25px/22px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid;
+}
+
+.action-button-2:hover,
+.action-button-2:focus {
+    border: 3px solid;
+    border-radius: 25px;
+    border-image: linear-gradient(45deg, lightblue, orange)1;
+}
+
+.action-panel-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 44px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 5px;
+    background: rgba(80, 68, 52, 1);
+    border-radius: 15px;
+}
+
+.registration-box-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 9.54%;
+    padding-right: 15px;
+}
+
+.svg-container-2 {
+    display: flex;
+    width: 18px;
+    height: 18px;
+}
+
+.register-container-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90.46%;
+    padding-right: 28px;
+}
+
+.registration-title-2 {
+    font: 100 20px e-UkraineHead;
+    color: rgba(255, 255, 255, 1);
+    white-space: pre-wrap;
+}
+
+.message-box-2 {
+    flex: 0 0 auto;
+    align-self: center;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.ukraine-head-text {
+    font: 100 17px e-UkraineHead;
+    color: rgba(80, 68, 52, 0.6);
+}
+
+.elegant-font {
+    font: 100 17px e-UkraineHead;
+}
+
+.ukraine-sign-in-text {
+    font: 400 17px e-UkraineHead;
+    color: #504434;
+}
+
+
+/* ----------------------REG-2-END-------------------- */
+
+
+/* --------------------- LOGIN ----------------------- */
+
+.vertical-centered-box {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 251px;
+}
+
+.login-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 378px;
+}
+
+.login-title-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    font: 400 35px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.login-section {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 21px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+.hierarchical-text-container {
+    flex: 0 0 auto;
+}
+
+.input-container-with-border-radius {
+    box-sizing: border-box;
+    width: 100%;
+    height: 43px;
+    padding-left: 19px;
+    font: 100 20px e-UkraineHead;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.login-button-styled {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 378px;
+    height: 44px;
+    font: 400 20px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.forgot-password-prompt {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    align-self: center;
+    width: 212px;
+    margin-top: -6px;
+    font: 400 17px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.ukraine-bold-heading {
+    font: 700 17px e-Ukraine;
+    text-align: center;
+}
+
+
+/* --------------------- LOGIN - END ----------------------- */
+
+
+/* --------------------- FEEDBACK ----------------------- */
+
+.contact-section {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 12px;
+    padding-top: 3rem;
+}
+
+.contact-form-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 666px;
+}
+
+.contact-title-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    font: 500 45px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.message-container1 {
+    flex: 0 0 auto;
+    margin-top: 52px;
+}
+
+.message-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.hierarchical-container {
+    flex: 1 1 0;
+}
+
+.input-container-with-border-radius-and-text-formatting {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-UkraineHead;
+    border-radius: 15px;
+}
+
+.input-style-f62::placeholder {
+    color: rgba(128, 128, 128, 1);
+}
+
+.flex-grow-shrink-basis {
+    flex: 1 1 0;
+    margin-left: 40px;
+}
+
+.vertical-margin-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 38px;
+}
+
+.message-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 19px 170px;
+    margin-top: 34px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(128, 128, 128, 1);
+    white-space: pre-wrap;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.send-button-style {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 666px;
+    height: 44px;
+    margin-top: 45px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    margin-bottom: 110px;
+}
+
+.address-section1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    min-width: 461px;
+    margin-top: 4px;
+    margin-left: -57px;
+}
+
+.svg-container {
+    display: flex;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+}
+
+.address-label {
+    flex: 0 0 auto;
+    margin-left: 7px;
+    font: 400 18px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.address-section {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.svg-container1 {
+    display: flex;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    margin-left: 19px;
+}
+
+
+/* --------------------- FEEDBACK - END ----------------------- */
+
+
+/* --------------------- APPLICATION ----------------------- */
+
+.flex-box-container-4 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 51px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.request-form-container-4 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 662px;
+}
+
+.heading-title-4 {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: 41px;
+    font: 500 45px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.missing-person-info-block-4 {
+    flex: 0 0 auto;
+    margin-top: 35px;
+}
+
+.person-description-container-4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
+.vertical-centered-column-container-4 {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.vertical-spacing-container-4 {
+    flex: 0 0 auto;
+    margin-top: 21px;
+}
+
+.content-wrapper-4 {
+    flex: 0 0 auto;
+}
+
+.input-container-with-border-radius-and-text-4 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-UkraineHead;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.profile-description-box-4 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 19px 394px;
+    margin-top: 35px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(128, 128, 128, 1);
+    white-space: pre-wrap;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.add-person-button-4 {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 662px;
+    height: 44px;
+    margin-top: 35px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: none;
+    border-radius: 15px;
+}
+
+.card-container-with-image-confirmation-button-4 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-width: initial;
+    height: 745px;
+    padding-left: 113px;
+    background: url("assets/div_17i29sg_b4e9b8.png") no-repeat 50% / cover;
+    border: 2px solid rgba(80, 68, 52, 1);
+    border-radius: 20px;
+}
+
+.confirm-button-container1-4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-width: 427px;
+    padding-bottom: 21px;
+}
+
+.confirm-button-container-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 76.91%;
+    padding-top: 680px;
+}
+
+.confirm-button-style-4 {
+    box-sizing: border-box;
+    display: block;
+    width: 313px;
+    min-width: 313px;
+    height: 44px;
+    font: 100 20px e-UkraineHead;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: none;
+    border-radius: 15px;
+}
+
+.vertical-image-container-4 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 23.09%;
+    padding-bottom: 679px;
+}
+
+.image-container-4 {
+    box-sizing: border-box;
+    display: block;
+    width: 45px;
+    max-width: initial;
+    height: 46px;
+}
+
+
+/* --------------------- APPLICATION - END ----------------------- */
+
+
+/* --------------------- INFO ----------------------- */
+
+.user-profile-card-5 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 1293px;
+    margin-top: 45px;
+    margin-left: -14.5px;
+}
+
+.profile-image-container-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 43px;
+    max-width: initial;
+    height: 290px;
+}
+
+.user-profile-card1-5 {
+    flex: 1 0 auto;
+    padding-top: 5.5px;
+    margin-left: 3px;
+}
+
+.title-heading-bold-text-color-5 {
+    font: 700 20px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.ruslan-name-text-style-5 {
+    margin-top: 21px;
+    font: 700 25px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.user-card-container-5 {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 19px;
+    padding-left: 19px;
+    margin-top: 22px;
+}
+
+.profile-image-container1-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 189px;
+    max-width: initial;
+    height: 187px;
+    clip-path: path("M189,93.5c0,51.639 -42.309,93.5 -94.5,93.5c-52.1909,0 -94.5,-41.861 -94.5,-93.5c0,-51.6386 42.3091,-93.5 94.5,-93.5c52.191,0 94.5,41.8614 94.5,93.5z");
+    mix-blend-mode: normal;
+    object-fit: contain;
+}
+
+.profile-card-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 168px;
+    padding-bottom: 15px;
+}
+
+.profile-card2-5 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.birth-info-text-style-5 {
+    font: 400 13px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.birthday-info-paragraph-5 {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    font: 400 18px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+    font-style: bold;
+}
+
+.vertical-centered-box-5 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.residence-location-text-style-5 {
+    flex: 0 0 auto;
+    font: 400 13px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.residence-location-5 {
+    flex: 0 0 auto;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    font: 400 18px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.send-message-button-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 167px;
+    height: 42px;
+    margin-top: 39px;
+    font: 400 18px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(90, 120, 112, 1);
+    border: none;
+    border-radius: 11px;
+}
+
+.profile-card1-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 194px;
+    padding-bottom: 15px;
+}
+
+.profile-card2-5 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ukraine-headline-text-style-5 {
+    font: 400 13px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.ukraine-text-block-5 {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    font: 400 18px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.status-label-5 {
+    margin-top: 5px;
+    font: 400 13px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.military-accept-button-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 193px;
+    height: 42px;
+    margin-top: 39px;
+    font: 400 18px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(90, 120, 112, 1);
+    border: none;
+    border-radius: 11px;
+}
+
+.message-container-5 {
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-top: 20px;
+}
+
+.tattooed-message-container-5 {
+    box-sizing: border-box;
+    max-width: 660px;
+    padding: 15px 19px 196px;
+    background: rgba(80, 68, 52, 0.1);
+    border: 2px solid rgba(80, 68, 52, 1);
+    border-radius: 15px;
+}
+
+.ukraine-message-style-5 {
+    box-sizing: border-box;
+    width: 100%;
+    font: 400 20px/30px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.content-wrapper-5 {
+    flex: 0 0 auto;
+    padding-top: 5.5px;
+    margin-left: 45px;
+}
+
+.image-container-flex-box-5 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 539px;
+    padding-bottom: 700px;
+    padding-left: 495px;
+    background: url("assets/div_39_43_c6e38e5f_4e9495.png") no-repeat 50% / cover;
+    border: none;
+    border-radius: 20px;
+}
+
+.image-container-5 {
+    display: block;
+    flex: 0 0 auto;
+    max-width: initial;
+    height: 46px;
+}
+
+
+/* --------------------- INFO - END ----------------------- */
+
+@media screen and (max-width: 600px) {
+    .silver-box-container,
+    .hero-section {
+        padding: 10px;
+    }
+    /* ... */
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .silver-box-container,
+    .hero-section {
+        padding: 20px;
+    }
+    /* ... */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container-main {
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    /* Змініть тривалість анімації за потреби */
+    animation-fill-mode: forwards;
+    /* Забезпечує збереження стану елемента після завершення анімації */
+}
+
 .ukraine-number-display-style {
     flex: 0 0 auto;
     font: 400 1.375rem e-Ukraine;
     color: rgba(0, 0, 0, 1);
     white-space: pre-wrap;
+}
+
+.containerClass.fade * {
+    transition: opacity 2s ease-in-out;
+    opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
