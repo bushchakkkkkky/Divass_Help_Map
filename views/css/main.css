@@ -1174,6 +1174,213 @@ p {
       }
 
 /* --------------------- APPLICATION - END ----------------------- */
+
+/* --------------------- INFO ----------------------- */
+.user-profile-card-5 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 1293px;
+    margin-top: 45px;
+    margin-left: -14.5px;
+  }
+  .profile-image-container-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 43px;
+    max-width: initial;
+    height: 290px;
+  }
+  .user-profile-card1-5 {
+    flex: 1 0 auto;
+    padding-top: 5.5px;
+    margin-left: 3px;
+  }
+  .title-heading-bold-text-color-5 {
+    font: 700 20px e-Ukraine Head;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .ruslan-name-text-style-5 {
+    margin-top: 21px;
+    font: 700 25px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .user-card-container-5 {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 19px;
+    padding-left: 19px;
+    margin-top: 22px;
+  }
+  .profile-image-container1-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 189px;
+    max-width: initial;
+    height: 187px;
+    clip-path: path("M189,93.5c0,51.639 -42.309,93.5 -94.5,93.5c-52.1909,0 -94.5,-41.861 -94.5,-93.5c0,-51.6386 42.3091,-93.5 94.5,-93.5c52.191,0 94.5,41.8614 94.5,93.5z");
+    mix-blend-mode: normal;
+    object-fit: contain;
+  }
+  .profile-card-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 168px;
+    padding-bottom: 15px;
+  }
+  .profile-card2-5 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .birth-info-text-style-5 {
+    font: 400 13px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+  }
+  .birthday-info-paragraph-5 {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    font: 400 18px e-Ukraine ;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+    font-style: bold;
+  }
+  .vertical-centered-box-5 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .residence-location-text-style-5 {
+    flex: 0 0 auto;
+    font: 400 13px e-Ukraine ;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+  }
+  .residence-location-5 {
+    flex: 0 0 auto;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    font: 400 18px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+  }
+  .send-message-button-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 167px;
+    height: 42px;
+    margin-top: 39px;
+    font: 400 18px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(90, 120, 112, 1);
+    border: none;
+    border-radius: 11px;
+  }
+  .profile-card1-5 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 194px;
+    padding-bottom: 15px;
+  }
+  .profile-card2-5 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .ukraine-headline-text-style-5 {
+    font: 400 13px e-Ukraine ;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+  }
+  .ukraine-text-block-5 {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 5px;
+    font: 400 18px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+  }
+  .status-label-5 {
+    margin-top: 5px;
+    font: 400 13px e-Ukraine ;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+  }
+  .military-accept-button-5 {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 193px;
+    height: 42px;
+    margin-top: 39px;
+    font: 400 18px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(90, 120, 112, 1);
+    border: none;
+    border-radius: 11px;
+  }
+  .message-container-5 {
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-top: 20px;
+  }
+  .tattooed-message-container-5 {
+    box-sizing: border-box;
+    max-width: 660px;
+    padding: 15px 19px 246px;
+    background: rgba(80, 68, 52, 0.1);
+    border: 2px solid rgba(80, 68, 52, 1);
+    border-radius: 15px;
+  }
+  .ukraine-message-style-5 {
+    box-sizing: border-box;
+    width: 100%;
+    font: 400 20px/30px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    text-align: left;
+    white-space: pre-wrap;
+  }
+  .content-wrapper-5 {
+    flex: 0 0 auto;
+    padding-top: 5.5px;
+    margin-left: 45px;
+  }
+  .image-container-flex-box-5 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 539px;
+    padding-bottom: 700px;
+    padding-left: 495px;
+    background: url("assets/div_39_43_c6e38e5f_4e9495.png") no-repeat 50% / cover;
+    border: none;
+    border-radius: 20px;
+  }
+  .image-container-5 {
+    display: block;
+    flex: 0 0 auto;
+    max-width: initial;
+    height: 46px;
+  }
+/* --------------------- INFO - END ----------------------- */
 @media screen and (max-width: 600px) {
     .silver-box-container,
     .hero-section {
