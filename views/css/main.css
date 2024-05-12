@@ -1,49 +1,49 @@
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-Regular.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-Regular.woff') format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-Bold.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-Italic.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-Italic.woff') format('woff');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'e-Ukraine';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-Ukraine-BoldItalic.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-Regular.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-Regular.woff') format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-Bold.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-Italic.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-Italic.woff') format('woff');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'e-UkraineHead';
-    src: url('/Divass_Help_Map/views/fonts/e-Ukraine_font/web/e-UkraineHead-BoldItalic.woff') format('woff');
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
@@ -117,7 +117,7 @@ p {
     flex: 0 0 auto;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .image-container {
@@ -575,6 +575,453 @@ p {
     white-space: pre-wrap;
 }
 
+/* ----------------------REG-1--------------------- */
+
+.registration-form-container1 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 195px;
+  }
+  .registration-form-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 378px;
+  }
+  .registration-title-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    font: 200 35px e-Ukraine Head;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .flex-column-with-gap {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 21px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+  }
+  .flexbox-container {
+    flex: 0 0 auto;
+  }
+  .elegant-input-style {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-Ukraine Head;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .input-style-f62::placeholder {
+    color: rgba(128, 128, 128, 1);
+  }
+  .select-button-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 378px;
+    height: 44px;
+    padding-right: 19px;
+    padding-left: 20px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    font: 100 20px e-Ukraine Head;
+    color: rgba(128, 128, 128, 1);
+  }
+  
+  .select-button-container option {
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%;
+  }
+  .select-button-container select:focus::after {
+    content: '';
+    border: 2px solid #000000; /* Змініть колір на потрібний */
+    border-radius: 5px; /* Змініть радіус на потрібний */
+  }
+  
+  
+  .confirm-button-style {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 378px;
+    height: 44px;
+    margin-top: 5px;
+    font: 100 20px e-Ukraine Head;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .user-prompt-message {
+    flex: 0 0 auto;
+    align-self: center;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .brand-message-text-style {
+    font: 100 17px e-Ukraine Head;
+    color: rgba(128, 128, 128, 1);
+  }
+  .brand-accent-text-color {
+    font: 400 17px e-Ukraine Head;
+    color: rgba(80, 68, 52, 1);
+  }
+
+
+/* ----------------------REG-1-END-------------------- */
+
+/* ----------------------REG-2--------------------- */
+
+.registration-section-container-2 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 183px;
+  }
+  .registration-form-container-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 378px;
+  }
+  .registration-title-style-2 {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: 5px;
+    font: 400 35px e-Ukraine Head;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .action-panel1-2 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 21px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+  }
+  .flexbox-container-2 {
+    flex: 0 0 auto;
+  }
+  .input-container-with-border-radius-and-text-formatting-2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-Ukraine Head;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .input-style-f62::placeholder {
+    color: rgba(128, 128, 128, 1);
+  }
+  .action-button-2 {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 378px;
+    height: 44px;
+    font: 700 25px/22px e-Ukraine;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid;
+
+  }
+.action-button-2:hover,
+.action-button-2:focus
+{
+    border: 3px solid;
+    border-radius: 25px;
+    border-image: linear-gradient(45deg, lightblue, orange)1;
+    
+
+}
+  .action-panel-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 44px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 5px;
+    background: rgba(80, 68, 52, 1);
+    border-radius: 15px;
+  }
+  .registration-box-2 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 9.54%;
+    padding-right: 15px;
+  }
+  .svg-container-2 {
+    display: flex;
+    width: 18px;
+    height: 18px;
+  }
+  .register-container-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90.46%;
+    padding-right: 28px;
+  }
+  .registration-title-2 {
+    font: 100 20px e-Ukraine Head;
+    color: rgba(255, 255, 255, 1);
+    white-space: pre-wrap;
+  }
+  .message-box-2 {
+    flex: 0 0 auto;
+    align-self: center;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .ukraine-head-text {
+    font: 100 17px e-Ukraine Head;
+    color: rgba(80, 68, 52, 0.6);
+  }
+  .elegant-font {
+    font: 100 17px e-Ukraine Head;
+  }
+  .ukraine-sign-in-text {
+    font: 400 17px e-Ukraine Head;
+    color: #504434;
+  }
+
+/* ----------------------REG-2-END-------------------- */
+
+/* --------------------- LOGIN ----------------------- */
+.vertical-centered-box {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 251px;
+  }
+  .login-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 378px;
+  }
+  .login-title-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    font: 400 35px e-Ukraine Head;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .login-section {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 21px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 26px;
+  }
+  .hierarchical-text-container {
+    flex: 0 0 auto;
+  }
+  .input-container-with-border-radius {
+    box-sizing: border-box;
+    width: 100%;
+    height: 43px;
+    padding-left: 19px;
+    font: 100 20px e-Ukraine Head;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .login-button-styled {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    min-width: 378px;
+    height: 44px;
+    font: 400 20px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .forgot-password-prompt {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    align-self: center;
+    width: 212px;
+    margin-top: -6px;
+    font: 400 17px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    text-align: center;
+    white-space: pre-wrap;
+  }
+  .ukraine-bold-heading {
+    font: 700 17px e-Ukraine;
+    text-align: center;
+  }
+
+/* --------------------- LOGIN - END ----------------------- */
+
+/* --------------------- FEEDBACK ----------------------- */
+.contact-section {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 12px;
+  }
+  .contact-form-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 666px;
+  }
+  .contact-title-text-style {
+    flex: 0 0 auto;
+    align-self: center;
+    font: 500 45px e-Ukraine Head;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .message-container1 {
+    flex: 0 0 auto;
+    margin-top: 52px;
+  }
+  .message-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .hierarchical-container {
+    flex: 1 1 0;
+  }
+  .input-container-with-border-radius-and-text-formatting {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding-left: 19px;
+    font: 100 20px e-Ukraine Head;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .input-style-f62::placeholder {
+    color: rgba(128, 128, 128, 1);
+  }
+  .flex-grow-shrink-basis {
+    flex: 1 1 0;
+    margin-left: 40px;
+  }
+  .vertical-margin-container {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 38px;
+  }
+  .message-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 19px 170px;
+    margin-top: 34px;
+    font: 100 20px e-Ukraine Head;
+    color: rgba(128, 128, 128, 1);
+    white-space: pre-wrap;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+  }
+  .send-button-style {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-width: 666px;
+    height: 44px;
+    margin-top: 45px;
+    font: 100 20px e-Ukraine Head;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    margin-bottom: 110px;
+  }
+  .address-section1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    min-width: 461px;
+    margin-top: 4px;
+    margin-left: -57px;
+  }
+  .svg-container {
+    display: flex;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+  }
+  .address-label {
+    flex: 0 0 auto;
+    margin-left: 7px;
+    font: 400 18px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+  }
+  .address-section {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .svg-container1 {
+    display: flex;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    margin-left: 19px;
+  }
+
+/* --------------------- FEEDBACK - END ----------------------- */
 @media screen and (max-width: 600px) {
     .silver-box-container,
     .hero-section {

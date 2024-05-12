@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-Italic.woff') format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('/views/fonts/e-Ukraine_font/web/e-Ukraine-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-Italic.woff') format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: url('/views/fonts/e-Ukraine_font/web/e-UkraineHead-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body,
+html {
+    background: rgba(217, 217, 217, 1);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+}
+
+div {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+}
+
+.silver-box-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    /* Встановлено відступи по 20px */
+}
+
+.hero-section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 16px 46px;
+    margin-right: -8px;
+    border-radius: 30px;
+    height: 99%;
+    background: rgba(255, 255, 255, 1);
+    overflow: auto;
+}
+
+.flex-container-with-spacing {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 14px;
+}
+
+.flex-row-container {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-container {
+    box-sizing: border-box;
+    display: block;
+    width: 40px;
+    max-width: initial;
+    height: 40px;
+}
+
+.text-grouping-container {
+    flex: 0 0 auto;
+    margin-left: 7px;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+}
+
+.elegant-text {
+    font: 400 22px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+}
+
+.navbar-container {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.brand-link {
+    flex: 0 0 auto;
+    font: 400 16px e-UkraineHead;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.button-primary-style {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    width: 100px;
+    min-width: 100px;
+    height: 40px;
+    margin-left: 29px;
+    font: 400 16px e-UkraineHead;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: none;
+    border-radius: 20px;
+}
